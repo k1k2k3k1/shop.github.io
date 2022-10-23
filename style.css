@@ -1,9 +1,422 @@
-*{
-    padding: 0;
+/* CSS reset */
+
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arimo', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-/* Write CSS code below */
+html {
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+
+}
+
+#navbar::before {
+    content: "";
+
+    background-color: black;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+
+
+}
+
+#navbar ul li a {
+    color: hwb(240 5% 93% / 0.747);
+    display: block;
+    padding: 40px 25px;
+    text-decoration: none;
+    letter-spacing: .1rem;
+
+}
+
+#navbar ul li a:active {
+    color: rgb(234, 234, 165);
+}
+
+#home {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    /* padding: 50px; */
+}
+
+#home::before {
+    content: "";
+
+    background color: #000;;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 1;
+}
+
+#hey {
+    font-size: 4rem;
+    /* margin: 15px; */
+    letter-spacing: .1rem;
+    color: #130404;
+}
+
+#name {
+    font-size: 5rem;
+    font-weight: 800;
+    margin: 15px;
+    letter-spacing: .1rem;
+    color: #0e0808;
+}
+
+#res {
+    letter-spacing: 0.1rem;
+    color: rgb(8, 1, 22);
+}
+
+/* 
+
+
+#resume-section {
+    padding: 10rem 0;
+} */
+
+#resume-section::before {
+    content: "";
+
+    background: #222;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: .87; */
+
+}
+
+#resume-section {
+    color: white;
+    position: relative;
+}
+
+.section2 {
+    /* width: 1200px; */
+}
+
+.container {
+    padding: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.container h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.heading {
+    text-align: center;
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.heading h4 strong {
+    font-weight: 800;
+}
+
+.education {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.experience {
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.boxes {
+    width: 500px;
+    height: 220px;
+    background: #333;
+    border-radius: 10px;
+    margin: 10px 20px;
+}
+
+.edu {
+    padding: 0 22px;
+    margin-bottom: 50px;
+}
+
+.desc {
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.date {
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.degree {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: rgb(197, 234, 94);
+}
+
+.deg-datails {
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: rgb(131, 129, 129);
+}
+
+.institution {
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+    color: rgb(131, 129, 129);
+}
+
+#about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background: #222;
+    color: white;
+    padding: 240px 300px;
+}
+
+#about-details {
+    padding-left: 100px;
+    display: inline-block;
+    height: 520px;
+
+
+}
+
+#about-details h4 {
+    margin: 50px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#about-details h4 strong {
+    font-weight: 800;
+}
+
+#about-details #about-para1 {
+    margin-bottom: 25px;
+    letter-spacing: 0.04rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+
+    color: rgb(131, 129, 129);
+
+    /* line-height: 1rem; */
+}
+
+#about-details #about-para2 {
+
+    margin-bottom: 50px;
+    letter-spacing: 0.04rem;
+    font-size: 0.9rem;
+    line-height: 1.7rem;
+
+    color: rgb(131, 129, 129);
+
+}
+
+#about-details #hire {
+    border-radius: 20px;
+    padding: 9px 23px;
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    background-color: #bac964;
+    border-color: #bac964;
+    color: #fff;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+#about-details #cv {
+    border-radius: 20px;
+    padding: 9px 23px;
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    color: #fff;
+    border: 1px solid transparent;
+
+}
+
+
+#contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background: #222;
+    color: white;
+    padding: 0 300px;
+    /* padding: 8rem; */
+    flex-wrap: wrap;
+}
+
+#contact-container #contact-heading {
+    text-align: center;
+    flex: 0 0 100%;
+    width: 100%;
+    /* margin-bottom: 5rem; */
+    margin: -120px;
+}
+
+#contact-container #details-left {
+    flex: 0 0 60%;
+    width: 50%;
+}
+
+#contact-container #details-right {
+    flex: 0 0 40%;
+    width: 50%;
+    height: 590px;
+    /* padding-left: 100px; */
+}
+
+#contact-container h4 {
+    margin: 50px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+#contact-container h4 strong {
+    font-weight: 800;
+}
+
+#details-right h4 {
+    margin: -26px 0 50px 0;
+}
+
+.left-boxes {
+    width: 600px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #333;
+    font-size: 16px;
+    padding: 0 16px;
+    border: none;
+    margin: 10px 10px 10px 0px;
+}
+
+#message {
+    height: 300px;
+}
+
+#msg {
+    border-radius: 20px;
+    padding: 16px 28px;
+    font-size: 0.7rem;
+    letter-spacing: 0.08rem;
+    cursor: pointer;
+    background-color: #bac964;
+    border-color: #bac964;
+    color: #fff;
+    outline: none;
+    border: 1px solid transparent;
+    margin-top: 30px;
+}
+
+.head {
+    color: #4b6176;
+    letter-spacing: .1em;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.head-details {
+    color: rgba(255, 255, 255, .4);
+    letter-spacing: .05em;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 35px;
+    display: block;
+}
+
+#address {
+    line-height: 1.5rem;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: #222;
+}
+
+#footer ul {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+#footer ul li {
+    list-style: none;
+    margin: 20px;
+}
+
+.icons {
+
+    font-size: 30px;
+    background: #333;
+    padding: 25px;
+    border-radius: 50%;
+}
+
+.icon {
+    color: #bac964;
+}
+
+.icon :active {
+    color: red;
+}
