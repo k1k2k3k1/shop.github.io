@@ -1,170 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Arimo&family=Montserrat:wght@100;300;700&family=Noto+Sans:wght@300&family=Ubuntu:wght@300;400;500&display=swap"
-        rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="util.css">
 </head>
-
 <body>
-    <nav id="navbar">
-        <ul>
-            <li class="item"><a href="#home">HOME</a></li>
-            <li class="item"><a href="#about-section">ABOUT</a></li>
-            <li class="item"><a href="#contact-section">CONTACT</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <p id="hey">HELLO, I'M</p>
-        <p id="name">PRAKASH SINGH PARIHAR</p>
-        <p id="res">AND THIS IS MY SHOP</p>
-
-    </section>
-    <section id="resume-section">
-        <div class="section2">
-
-            <div class="container">
-                <div class="heading">
-                    <h4>My <strong id="x">SHOP</strong></h4>
-
-                </div>
-                <div class="SHOP">
-                    <h4 class="edu">SHOP</h4>
-                    <div class="LISTBOX">
-                        <div class="desc">
-                            <p class="COSMETIC PRODUCT"> COSMETIC PRODUCT IS AVAILABLE IN MY SHOP</p>
-                            <p class="MEDICINE">ALL TYPE AVAILABLE</p>
-                            <p class="DITALS">Even the all-powerful Pointing has no control about the blind texts
-                                it is an almost unorthographic.</p>
-                            <p class="SHOP NAME">PRAKASH MEDICAL BEOHARI</p>
-                        </div>
-                    </div>
-                    <div class="start date">
-                        <div class="desc">
-                            <p class=" start date">March 2009 - Present</p>
-                            <p class="name">prakash medical beohari</p>
-                            <p class="deg-datails">Even the all-powerful Pointing has no control about the blind texts
-                                it is an almost unorthographic.</p>
-                            <p class="near by">hopital ke samne</p>
-                        </div>
-                    </div>
-                    <div class="list box">
-                        <div class="desc">
-                            <p class="medicine"></p>
-                            <p class="degree">Masteral in Information Technology</p>
-                            <p class="deg-datails">Even the all-powerful Pointing has no control about the blind texts
-                                it is an almost unorthographic.</p>
-                            <p class="institution">New York University</p>
-                        </div>
-                    </div>
-
-                </div>
+    <div class="container flex item-center j-center">
+        <div class="calculator">
+            <h2>Calculator</h2>
+         <input type="text" class="display" disabled>
+         <div class="buttom-section flex j-center column ">
+            <div class="btn-area">
+                <button class="btn">0</button>
+                <button class="btn">%</button>
+                <button class="btn">*</button>
+                <button class="btn">/</button>
+            </div>
+            <div class="btn-area">
+                <button class="btn">7</button>
+                <button class="btn">8</button>
+                <button class="btn">9</button>
+                <button class="btn">+</button>
+            </div>
+            <div class="btn-area">
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn ">-</button>
+            </div>
+            <div class="btn-area m-top ">
+             <div>
+            <div class="btn-area">
+                <button class="btn m-right">1</button>
+                <button class="btn m-right">2</button>
+                <button class="btn">3</button>
                 
-                        </div>
-                    </div>
-                    <div class="exp2 boxes">
-                        <div class="desc">
-                            <p class="date">March 2009- Present</p>
-                            <p class="degree">pharmesi</p>
-                            <p class="deg-datails">Even the all-powerful Pointing has no control about the blind texts
-                                it is an almost unorthographic.</p>
-                            <p class="institution">New York University</p>
-                        </div>
-                    </div>
-                    <div class="exp3 boxes">
-                        <div class="desc">
-                            <p class="date">March 2009- Present</p>
-                            <p class="degree">Masteral in Information Technology</p>
-                            <p class="deg-datails">Even the all-powerful Pointing has no control about the blind texts
-                                it is an almost unorthographic.</p>
-                            <p class="medicine">english mediicine and pantanjli product</p>
-                        </div>
-                    </div>
-
-                </div>
             </div>
+            <div class="btn-area">
+                <button class="btn wd">c</button>
+                <button class="btn">^</button>
+           </div>
         </div>
-    </section>
-    <section id="about-section">
-        <div id="about-container">
-            <div id="about-pic">
-                <img src="C:\Users\dolly vivek\Desktop\dolly\WhatsApp Images\IMG-20211203-WA0028.jpg" alt="My Photo" width="500px">
-            </div>
-            <div id="about-details">
-                <h4>About <strong id="y">Me</strong></h4>
-                <p id="about-para1">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large
-                    language ocean.</p>
-                <p id="about-para2">A small river named Duden flows by their place and supplies it with the necessary
-                    regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
-                </p>
-                <button type="button" id="hire">HIRE ME</button>
-                <button type="button" id="cv">DOWNLOAD CV</button>
-
-            </div>
+        <div class="btn-area">
+            <button class="btn hi">=</button>
         </div>
-    </section>
-    <section id="contact-section">
-        <div id="contact-container">
-            <div id="contact-heading">
-
-                <h4>Get <strong id="y">In Touch</strong></h4>
-            </div>
-            <div id="details-left">
-
-                <form action="#">
-                    <h4>Get In Touch</h4>
-                    <input type="text" name="" id="myname" class="left-boxes" placeholder="Your Name"><br>
-                    <input type="email" name="" id="email" class="left-boxes" placeholder="Your Email"><br>
-                    <input type="text" name="" id="phone" class="left-boxes" placeholder="Your Phone"><br>
-                    <textarea name="" id="message" cols="30" rows="10" class="left-boxes"
-                        placeholder="Write a Message"></textarea><br>
-                    <button type="button" id="msg">SEND MESSAGE</button>
-                </form>
-            </div>
-            <div id="details-right">
-                <h4>My Contact Details</h4>
-                <p class="head">Email</p>
-                <p class="head-details">ps02473@gmail.com</p>
-                <p class="head">phone</p>
-                <p class="head-details">+917049749664</p>
-                <p class="head">fax</p>
-                <p class="head-details">+30 976 1382 9922</p>
-                <p class="head">address</p>
-                <pre class="head-details" id="address">
-prakash medical beohari
-new hospital ke pas
-
-                </pre>
-            </div>
         </div>
-    </section>
-    <footer id="footer">
-        <ul>
-            <li class="icons"><a class="icon1 icon" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"
-                        aria-hidden="true"></i></a></li>
-            <li class="icons"><a class="icon1 icon" href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"
-                        aria-hidden="true"></i></a></li>
-            <li class="icons"><a class="icon1 icon" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"
-                        aria-hidden="true"></i></a></li>
-            <li class="icons"><a class="icon1 icon" href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"
-                        aria-hidden="true"></i></a></li>
-            <li class="icons"><a class="icon1 icon" href="https://www.github.com" target="_blank"><i class="fa fa-github"
-                        aria-hidden="true"></i></a></li>
-        </ul>
-    </footer>
+         </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
