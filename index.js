@@ -1,19 +1,29 @@
-let result="";
-let button=document.querySelectorAll(".btn");
-Array.from(button).forEach((button)=>{
-button.addEventListener("click",(e)=>{
-if(e.target.innerHTML == "="){
-    result=eval(result);
-    document.querySelector(".display").value=result;
-}
- else if(e.target.innerHTML == "C"){
-    result="";
-    document.querySelector(".display").value=result;
-}
-else{
-    console.log(result)
-    result = result + e.target.innerHTML;
-    document.querySelector(".display").value=result;
-}
+let inputField=document.getElementById("inputv");
+
+let button=document.getElementById("btn");
+
+let does=document.getElementById("does");
+
+button.addEventListener('click',function(){
+
+var par=document.createElement('p');
+
+par.innerText=inputField.value;
+
+does.appendChild(par);
+
+inputField.value="";
+
+par.addEventListener('click',function(){
+
+par.style.textDecoration="line-through red";
+
 })
+
+par.addEventListener('dblclick',function(){
+
+does.removeChild(par);
+
+})
+
 })
